@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Header</title>
+    <style>
+      /* Style the header with a grey background and some padding */
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #f1f1f1;
+        padding: 20px 10px;
+      }
+
+      /* Style the logo with a font size and weight */
+      .logo {
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      /* Style the links with a color, padding, and border radius */
+      .links {
+        display: flex;
+        list-style: none;
+      }
+
+      .links li a {
+        color: black;
+        text-decoration: none;
+        padding: 12px;
+        border-radius: 4px;
+      }
+
+      /* Change the background color on mouse-over */
+      .links li a:hover {
+        background-color: #ddd;
+      }
+
+      /* Style the active/current link */
+      .links li a.active {
+        background-color: dodgerblue;
+        color: white;
+      }
+
+      /* Hide the checkbox by default */
+      #nav-toggle {
+        display: none;
+      }
+
+      .icon-burger {
+        display: none;
+        cursor: pointer;
+      }
+
+      .icon-burger .line {
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        margin: 5px;
+      }
+
+      @media screen and (max-width: 768px) {
+        .links {
+          display: none;
+        }
+
+        .icon-burger {
+          display: block;
+        }
+        #nav-toggle:checked ~ .links {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <input type="checkbox" id="nav-toggle" />
+      <a href="#" class="logo">My Website</a>
+      <ul class="links">
+        <li><a href="https:www.apple.com/" class="active">Home</a></li>
+        <li><a href="https:www.apple.com/">About</a></li>
+        <li><a href="https:www.apple.com/">Services</a></li>
+        <li><a href="https:www.apple.com/">Contact</a></li>
+      </ul>
+      <label for="nav-toggle" class="icon-burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </label>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+      voluptatem,<br />
+      reprehenderit reiciendis minus sit eius numquam aspernatur repellendus
+      quibusdam adipisci est error non, quisquam ab officiis<br />
+      atque ea quam, natus omnis porro obcaecati voluptas et dolorem. Atque
+      adipisci consectetur architecto.<br />
+      Similique alias laboriosam veniam ab ipsam. Voluptate est non doloribus.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+      voluptatem,<br />
+      reprehenderit reiciendis minus sit eius numquam aspernatur repellendus
+      quibusdam adipisci est error non, quisquam ab officiis<br />
+      atque ea quam, natus omnis porro obcaecati voluptas et dolorem. Atque
+      adipisci consectetur architecto.<br />
+      Similique alias laboriosam veniam ab ipsam. Voluptate est non doloribus.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+      voluptatem,<br />
+      reprehenderit reiciendis minus sit eius numquam aspernatur repellendus
+      quibusdam adipisci est error non, quisquam ab officiis<br />
+      atque ea quam, natus omnis porro obcaecati voluptas et dolorem. Atque
+      adipisci consectetur architecto.<br />
+      Similique alias laboriosam veniam ab ipsam. Voluptate est non doloribus.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+      voluptatem,<br />
+      reprehenderit reiciendis minus sit eius numquam aspernatur repellendus
+      quibusdam adipisci est error non, quisquam ab officiis<br />
+      atque ea quam, natus omnis porro obcaecati voluptas et dolorem. Atque
+      adipisci consectetur architecto.<br />
+      Similique alias laboriosam veniam ab ipsam. Voluptate est non doloribus.
+    </p>
+  </body>
+</html>
